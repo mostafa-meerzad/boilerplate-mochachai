@@ -59,4 +59,7 @@ suite("Basic Assertions", function () {
 
 `equal()` compares objects using `==`. `notEqual()` is the opposite
 
+`strictEqual()` compares objects using `===`. `notStrictEqual()` is the opposite
+
+`deepEqual()` asserts that two objects are deep equal. `notDeepEqual()` is the opposite
 
