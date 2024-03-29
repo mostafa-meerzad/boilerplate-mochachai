@@ -80,4 +80,14 @@ test("#approximately", function () {
 
 `.include(array, val, message)` checks if the provided value is in the provided array, `.notInclude(array, val, message)` is the opposite.
 
-`isString` or `isNotString` asserts that the actual value is a string.
+`isString(val, message)` or `isNotString(val, message)` asserts that the actual value is a string.
+
+`include(string, val, message)` and `notInclude(string, val, message)` work for strings too! include() asserts that the actual string contains the expected substring.
+
+`match(string, regex)` asserts that the actual value matches the second argument regular expression. `.notMatch(string, regex)` is the opposite.
+
+`property(obj, prop, message)` asserts that the actual object has a given property. `notProperty(obj, prop, message)` is the opposite.
+
+`typeOf(obj, obj-type-in-string)` checks if the provided object's type is the stringified equivalent of the provided type in string, `notTypeOf(obj, obj-type-in-string)` is the opposite.
+
+`instanceOf(obj, constructor)` asserts that an object is an instance of a constructor. `notInstanceOf(obj, constructor)` is the opposite.
