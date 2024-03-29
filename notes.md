@@ -75,3 +75,9 @@ test("#approximately", function () {
   assert.approximately(weirdNumbers(0.2), 1, 0.8);
 });
 ```
+
+`.isArray(val, message)` checks if the provided value is an array, `.isNotArray(val, message)` is the opposite.
+
+`.include(array, val, message)` checks if the provided value is in the provided array, `.notInclude(array, val, message)` is the opposite.
+
+`isString` or `isNotString` asserts that the actual value is a string.
